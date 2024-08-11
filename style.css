@@ -1,0 +1,132 @@
+/* importing essential fonts */
+
+@font-face {
+    font-family: 'LetteraMonoLL';
+    src: url('./fonts/LetteraMonoLL.ttf');
+}
+
+@font-face {
+    font-family: 'Ndot55';
+    src: url('./fonts/Ndot55.ttf');
+}
+
+@font-face {
+    font-family: 'FranklinGothicBook';
+    src: url('./fonts/FranklinGothicBookRegular.ttf');
+}
+
+
+/* css reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* background image for header and made position relative to position the floating text section*/
+
+header{
+    background-image: url('./images/cover.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 0 60px;
+    position: relative;
+    height: 94vh;
+}
+
+/* nav made flex to containe logo and nav links */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+}
+
+/* logo size */
+.logo{
+    height: 3.785rem;
+}
+
+/* navlink section created using flex and default list styles removed */
+nav > ul{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-left: 6rem;
+}
+
+/* navlinks */
+nav > ul > li{
+    color: white;
+    font-size: 1rem;
+    font-family: 'LetteraMonoLL';
+}
+
+/* navlinks hover style */
+nav > ul > li:hover{
+    color: #fb471f;
+    cursor: pointer;
+}
+
+/* floating text session over header */
+
+.floating-text{
+    position: absolute;
+    bottom: 11.5rem;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* style for floating text heading */
+.floating-text > h1{
+    font-family: 'Ndot55';
+    font-size: 3.75rem;
+    color: white;;
+    line-height: 0.9;
+    letter-spacing: -1px;
+}
+
+/* defalut button size and font */
+
+.button{
+    width: 12rem;
+    height: 2rem;
+    color: white;
+    border-radius: 0;
+    border: none;
+    font-size: 0.75rem;
+    font-family: 'LetteraMonoLL';
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+/* orange button color and hover color */
+
+.orange-btn{
+    background-color: rgb(251, 71, 31);
+}
+
+.orange-btn:hover{
+    background-color: black;
+}
+
+/* black button color and hover color */
+
+.black-btn{
+    background-color: black;
+}
+
+.black-btn:hover{
+    background-color: rgb(251, 71, 31);
+}
+
+/* play logo */
+.play-logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
