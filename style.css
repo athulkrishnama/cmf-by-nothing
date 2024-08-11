@@ -152,9 +152,7 @@ nav > ul > li:hover{
 }
 /* only last product sections */
 
-.product-section:last-child{
-    color: white;
-}
+
 
 /* diffrent background images for sections */
 .product-1{
@@ -171,6 +169,7 @@ nav > ul > li:hover{
 
 .product-4{
     background-image: url('./images/charger.bmp');
+    color: white;
 }
 
 .product-section  p{
