@@ -23,6 +23,54 @@
     box-sizing: border-box;
 }
 
+/* common or default classes */
+
+/* common heading styles */
+.heading{
+    font-family: 'Ndot55';
+    font-size: 3.75rem;
+    line-height: 0.9;
+    letter-spacing: -1px;
+}
+
+/* defalut button size and font */
+
+.button{
+    width: 12rem;
+    height: 2rem;
+    color: white;
+    border-radius: 0;
+    border: none;
+    font-size: 0.75rem;
+    font-family: 'LetteraMonoLL';
+    transition: 100ms;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+/* orange button color and hover color */
+
+.orange-btn{
+    background-color: rgb(251, 71, 31);
+}
+
+.orange-btn:hover{
+    background-color: black;
+}
+
+/* black button color and hover color */
+
+.black-btn{
+    background-color: black;
+}
+
+.black-btn:hover{
+    background-color: rgb(251, 71, 31);
+}
+
+
 /* background image for header and made position relative to position the floating text section*/
 
 header{
@@ -81,52 +129,66 @@ nav > ul > li:hover{
 
 /* style for floating text heading */
 .floating-text > h1{
-    font-family: 'Ndot55';
-    font-size: 3.75rem;
     color: white;;
-    line-height: 0.9;
-    letter-spacing: -1px;
 }
 
-/* defalut button size and font */
-
-.button{
-    width: 12rem;
-    height: 2rem;
-    color: white;
-    border-radius: 0;
-    border: none;
-    font-size: 0.75rem;
-    font-family: 'LetteraMonoLL';
-}
-
-.button:hover{
-    cursor: pointer;
-}
-
-/* orange button color and hover color */
-
-.orange-btn{
-    background-color: rgb(251, 71, 31);
-}
-
-.orange-btn:hover{
-    background-color: black;
-}
-
-/* black button color and hover color */
-
-.black-btn{
-    background-color: black;
-}
-
-.black-btn:hover{
-    background-color: rgb(251, 71, 31);
-}
 
 /* play logo */
 .play-logo{
     position: absolute;
     top: 50%;
     left: 50%;
+}
+
+/* styles for product section */
+
+/* common styles for all products */
+.product-section{
+    height: 96vh;
+    padding: 60px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/* only last product sections */
+
+.product-section:last-child{
+    color: white;
+}
+
+/* diffrent background images for sections */
+.product-1{
+    background-image: url('./images/cmf-phone-1.bmp');
+}
+
+.product-2{
+    background-image: url('./images/buds-pro-2.bmp');
+}
+
+.product-3{
+    background-image: url('./images/watch\ pro\ 2.bmp');
+}
+
+.product-4{
+    background-image: url('./images/charger.bmp');
+}
+
+.product-section  p{
+    font-family: 'LetteraMonoLL';
+    font-size: 1.125rem;
+}
+
+/* styling product section div using flex and postioning*/
+
+
+.product-section > div{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 20%;
+    gap: 1.5rem ;
+}
+
+.product-section .black-btn{
+    margin-right: 1.25rem;
 }
