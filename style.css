@@ -346,3 +346,58 @@ nav>ul>li:hover {
     font-family: 'FranklinGothicBook';
     line-height: 1.27rem;
 }
+
+/* contact section */
+
+.contact{
+    height: 13rem;
+    display: flex;
+    align-items: center;
+    padding: 3rem 5rem;
+}
+
+.contact > *{
+    flex-basis: 100%;
+}
+
+.contact h6{
+    font-family: 'LetteraMonoLL';
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0.8rem;
+}
+
+.contact p{
+    font-family: 'FranklinGothicBook';
+    font-size: 0.875rem;
+}
+
+.contact .email{
+    border: 1px solid black;
+    width: 37.5rem;
+    height: 3.3rem;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email input{
+    width: 80%;
+    height: 60%;
+    border: none;
+    font-family: 'LetteraMonoLL';
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.email input:focus{
+    border: none;
+    outline: none;
+}
+
+.terms{
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
