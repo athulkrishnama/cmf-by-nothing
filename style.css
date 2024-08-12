@@ -401,3 +401,72 @@ nav>ul>li:hover {
     display: flex;
     gap: 1rem;
 }
+
+
+/* links section */
+
+.links{
+    display: flex;
+    padding: 5rem;
+    background-color: #e1e4ea;
+    position: relative;
+    padding-top: 15rem;
+}
+
+.copyright{
+    width: 50%;
+    font-family: 'LetteraMonoLL';
+    font-weight:400;
+    font-size: 0.875rem;
+}
+
+.lists{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.lists  h1{
+    font-family: 'LetteraMonoLL';
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 4rem;
+}
+.lists ul{
+    list-style-type: none;
+    font-family: 'LetteraMonoLL';
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.lists li{
+    margin-bottom: 1.5rem;
+}
+
+
+.lists li:hover{
+    color:#fb471f
+}
+
+
+/* locatoin div  positioning*/
+.location{
+    position: absolute;
+    top:7%;
+    right: 7%;    
+    font-family: 'LetteraMonoLL';
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+}
+
+.location:hover{
+    color: #fb471f;
+    text-decoration: none;
+}
+
+.location p{
+    padding-left: 1rem;
+}
