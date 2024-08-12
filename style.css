@@ -286,3 +286,36 @@ nav>ul>li:hover {
 .color-selector .grey{
     background-color: #e1e4ea;;
 }
+
+/* details section */
+
+/* details section is displayed as grid of 3 rows and 3 columns */
+.details{
+    height: 90vh;
+    padding: 7rem 9rem;
+    background-color: #424b54;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    font-family: 'LetteraMonoLL';
+    gap: 1rem;
+    color: white;
+}
+
+.details > div{
+    font-family: 'LetteraMonoLL';
+}
+
+.details h4{
+    letter-spacing: -1px;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.details p{
+    width: 18rem;
+    display: inline-block;
+    font-size: 0.875rem;
+    line-height: 18.15px;
+}
