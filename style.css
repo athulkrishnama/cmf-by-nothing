@@ -17,7 +17,7 @@
 
 
 /* css reset */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -26,7 +26,7 @@
 /* common or default classes */
 
 /* common heading styles */
-.heading{
+.heading {
     font-family: 'Ndot55';
     font-size: 3.75rem;
     line-height: 0.9;
@@ -35,7 +35,7 @@
 
 /* defalut button size and font */
 
-.button{
+.button {
     width: 12rem;
     height: 2rem;
     color: white;
@@ -46,34 +46,34 @@
     transition: 100ms;
 }
 
-.button:hover{
+.button:hover {
     cursor: pointer;
 }
 
 /* orange button color and hover color */
 
-.orange-btn{
+.orange-btn {
     background-color: rgb(251, 71, 31);
 }
 
-.orange-btn:hover{
+.orange-btn:hover {
     background-color: black;
 }
 
 /* black button color and hover color */
 
-.black-btn{
+.black-btn {
     background-color: black;
 }
 
-.black-btn:hover{
+.black-btn:hover {
     background-color: rgb(251, 71, 31);
 }
 
 
 /* background image for header and made position relative to position the floating text section*/
 
-header{
+header {
     background-image: url('./images/cover.webp');
     background-size: cover;
     background-position: center;
@@ -83,7 +83,7 @@ header{
 }
 
 /* nav made flex to containe logo and nav links */
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,12 +91,12 @@ nav{
 }
 
 /* logo size */
-.logo{
+.logo {
     height: 3.785rem;
 }
 
 /* navlink section created using flex and default list styles removed */
-nav > ul{
+nav>ul {
     width: 50%;
     display: flex;
     justify-content: space-between;
@@ -105,21 +105,21 @@ nav > ul{
 }
 
 /* navlinks */
-nav > ul > li{
+nav>ul>li {
     color: white;
     font-size: 1rem;
     font-family: 'LetteraMonoLL';
 }
 
 /* navlinks hover style */
-nav > ul > li:hover{
+nav>ul>li:hover {
     color: #fb471f;
     cursor: pointer;
 }
 
 /* floating text session over header */
 
-.floating-text{
+.floating-text {
     position: absolute;
     bottom: 11.5rem;
     gap: 1.5rem;
@@ -128,13 +128,14 @@ nav > ul > li:hover{
 }
 
 /* style for floating text heading */
-.floating-text > h1{
-    color: white;;
+.floating-text>h1 {
+    color: white;
+    ;
 }
 
 
 /* play logo */
-.play-logo{
+.play-logo {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -143,36 +144,37 @@ nav > ul > li:hover{
 /* styles for product section */
 
 /* common styles for all products */
-.product-section{
+.product-section {
     height: 96vh;
     padding: 60px;
     background-position: center;
     background-size: cover;
     position: relative;
 }
+
 /* only last product sections */
 
 
 
 /* diffrent background images for sections */
-.product-1{
+.product-1 {
     background-image: url('./images/cmf-phone-1.bmp');
 }
 
-.product-2{
+.product-2 {
     background-image: url('./images/buds-pro-2.bmp');
 }
 
-.product-3{
-    background-image: url('./images/watch\ pro\ 2.bmp');
+.product-3 {
+    background-image: url('./images/watch-pro-2.bmp');
 }
 
-.product-4{
+.product-4 {
     background-image: url('./images/charger.bmp');
     color: white;
 }
 
-.product-section  p{
+.product-section p {
     font-family: 'LetteraMonoLL';
     font-size: 1.125rem;
 }
@@ -180,14 +182,107 @@ nav > ul > li:hover{
 /* styling product section div using flex and postioning*/
 
 
-.product-section > div{
+.product-section>div {
     display: flex;
     flex-direction: column;
     position: absolute;
     bottom: 20%;
-    gap: 1.5rem ;
+    gap: 1.5rem;
 }
 
-.product-section .black-btn{
+.product-section .black-btn {
     margin-right: 1.25rem;
+}
+
+
+/* shop product section */
+
+.shop {
+    height: 100vh;
+    display: flex;
+}
+
+/* each product div in shop section */
+
+.shop>div {
+    padding: 3.7rem;
+    flex-basis: 100%;
+    background-color: rgb(225, 228, 234);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* changing background color of 2nd product*/
+.shop>div:nth-child(2) {
+    background-color: gray;
+}
+
+/* style for product heading */
+.product-heading {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.product-heading>h2 {
+    font-family: 'Ndot55';
+    font-size: 2.625rem;
+}
+
+.price {
+    font-family: 'LetteraMonoLL';
+    color: #fb471f;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+/* .old-products {} */
+
+.old-products img {
+    width: 74%;
+    align-self: center;
+}
+
+.old-products p {
+    font-family: 'LetteraMonoLL';
+    font-size: 12px;
+}
+
+/* for button inside old products section */
+/* .old-products .buttons{
+
+} */
+
+/* color selector in old products */
+
+.color-selector{
+    display: flex;
+    justify-content: center;
+    gap: 0.7rem;
+}
+
+.color-selector > div{
+    height: 1.875rem;
+    width: 1.875rem;
+    border-radius: 50%;
+}
+
+
+.color-selector .white{
+    border: 2px solid #fb471f;
+    background-color: white;
+}
+
+.color-selector .orange{
+    /* border: 1px solid #fb471f; */
+    background-color: #fb471f;
+}
+
+.color-selector .black{
+    /* border: 2px solid #fb471f; */
+    background-color: black;
+}
+
+.color-selector .grey{
+    background-color: #e1e4ea;;
 }
